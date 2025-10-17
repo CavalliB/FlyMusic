@@ -21,9 +21,9 @@ function App() {
           <li>
             <button onClick={() => setSeccion('playlist')}>Playlist</button>
           </li>
-          <li>
+          {/* <li>
             <button className='usericon' onClick={() => setSeccion('usuario')}><img className='usericon' src="https://imgs.search.brave.com/uRLjIz0r9LwrGq9jagcfeSqoD188L_55nkk0IhaFSrw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTk5/NDQ1MzIyL3Bob3Rv/L25hbmR1LXJoZWEt/YW1lcmljYW5hLWdy/ZWF0ZXItcmhlYS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/NGc2MDRpUFBPbDBH/LXlzalBKalVnTmdx/bnFvMGl4SFFGWGhK/dnRhMWRFWT0" alt="Icono" /> </button>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <main>
@@ -33,7 +33,16 @@ function App() {
         {seccion === 'usuario' && <Usuario />}
 
       </main>
-      <footer>Reproductor</footer>
+      <footer>
+        <div className='container-info'>
+        <img className='iconofooter' src="/coldplay-band.jpg" alt="Icono-Cancion" />
+        <div className='container-info2'>
+        <p className='NombreCancion'>Noche Complicada</p>
+        <p className='AutorCancion'>Frijo, Paulo Londra</p>
+        </div>
+        </div>
+        
+      </footer>
     </div>
   )
 }
